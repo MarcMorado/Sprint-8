@@ -89,11 +89,48 @@ body{
     color: #9A9A9A;
 }
 
+.ships-title{
+    font-family: 'Orbitron';
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: #9A9A9A; 
+}
+
+.ships-main{
+    font-family: 'Orbitron';
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: #9A9A9A; 
+}
+
+.ships-secondary{
+    font-family: 'Orbitron';
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #9A9A9A; 
+}
+
 .starships{
     display:flex;
     flex-direction: column;
 }
 
+/* HOME */
+
+.home-promo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-land{
+    font-family: 'Orbitron';
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: .8em;
+    color: #cfcfcf; 
+}
 
 /* STARSHIP INFORMATION */
 
@@ -102,9 +139,11 @@ body{
     top:0;
     left:0;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:rgba(0, 0, 0, 0.5);
 }
 
 .info-window{
@@ -112,13 +151,70 @@ body{
     background-color: #0A0B0B;
     border-radius: 5;
     padding: 15;
-    box-shadow: 2px 2px 10px rgb(77, 77, 77, 0.3);
+    box-shadow: 4px 4px 14px rgb(77, 77, 77, 0.3);
     z-index: 10;
     min-width: 320;
+    border-radius: 25px;
 }
 
-.inflo-close{
+.info-close{
+    cursor: pointer;
+    font-family: 'Orbitron';
     position: absolute;
     top:0;
     right:0;
+    border-color: rgba(255, 255, 255, 0.4);
+    color: aliceblue;
+    background-color: transparent;
+    border-radius: 25px;
+}
+
+.starship-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.starship-dets{
+    display: flex;
+    padding: 2em;
+}
+
+.starship-details-left{
+    padding: 1em;
+}
+
+.starship-details-right{
+    border-left: 1px solid #9A9A9A;
+    padding: 1em;
+}
+
+
+/* PAGE BUTTONS */
+
+.page-btns{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1em;
+    position: relative;
+    right: 170px;
+}
+
+.page-btn{
+    display: flex;
+    margin: 10px;
+    padding: .5em;
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.4);
+    color: aliceblue;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.page-btns button:hover{
+    background-color: #2e2e2e;
+    color: rgb(255, 255, 255);
 }
