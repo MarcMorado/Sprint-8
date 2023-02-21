@@ -196,7 +196,7 @@ body{
 
 .page-btns{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     padding: 1em;
     position: relative;
@@ -218,3 +218,128 @@ body{
     background-color: #2e2e2e;
     color: rgb(255, 255, 255);
 }
+
+
+/* SLIDE SHOW */
+
+.img-slide{
+    position: relative;
+}
+
+.contenedor-slide{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slide{
+    position: relative;
+    min-width: 1536px;
+    max-height: 653px;
+    overflow: hidden;
+    transform: .3 ease all;
+    z-index: 10;   
+}
+
+.content-overlay{
+    display: flex;
+    justify-content: flex-end;  
+    position: relative;
+    bottom: 600px;  
+    right: 150px;
+}
+
+.content-overlay img{
+    width: 700px;
+    position: relative;
+    right: 72px;
+}
+
+.content-overlay-2{
+    display: flex;
+    justify-content: flex-start;  
+    position: relative;
+    bottom: 600px;
+    left: 150px; 
+}
+
+.content-overlay-2 img{
+    width: 700px;
+    position: relative;
+    right: 72px;
+}
+
+.content-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-title{
+    width: 50px;
+}
+
+
+.content-btns{
+    padding-top: 10px;
+}
+
+.alien-btn{
+    background-color: rgb(74, 103, 230);
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.alien-btn a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ships-btn{
+    background-color: rgb(223, 143, 51);
+    border-radius: 15px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ships-btn a{
+    text-decoration: none;
+    font-family: 'Orbitron';
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+.batch-btn{
+    background-color: rgb(158, 120, 68);
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.batch-btn a{
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.content-arrow{
+    position: absolute;
+    display: flex;
+    justify-content:space-evenly;
+	top: 0;
+	z-index: 20;
+	width: 100%;
+	height: 100%;
+
+}
+
+.arrow-btn{
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(241, 239, 239, 0.9);
+    border-color: transparent;
+}
+
+
