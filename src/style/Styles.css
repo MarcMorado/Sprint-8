@@ -223,7 +223,10 @@ body{
 /* SLIDE SHOW */
 
 .img-slide{
-    position: relative;
+    max-width: 1600px;
+    max-height: 653px;
+	margin: 50px auto;
+    overflow: hidden;
 }
 
 .contenedor-slide{
@@ -340,6 +343,56 @@ body{
     background-color: transparent;
     color: rgb(241, 239, 239, 0.9);
     border-color: transparent;
+}
+
+/* LOG IN /// SING UP */
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: 'Orbitron';
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.login-component{
+    position: relative;
+    bottom:500px;
+    background-color: rgb(00, 00, 00,0.7);
+    padding: 10px 20px 10px 20px; 
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.7);
+    
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: 'Orbitron';
+    color: #fff;
+}
+
+.login-form label{
+    padding: 10px;
+}
+
+.login-Btn{
+    background-color: rgb(201, 139, 54);
+    border-radius: 15px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 10px;
 }
 
 

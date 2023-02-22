@@ -13,15 +13,15 @@ export default function Navbar() {
           />
         </div>
         <div className="user">
-          <button>LOG IN</button>
+          <button><Link to="/">LOG IN</Link></button>
           <p>//</p>
-          <button>SING UP</button>
+          <button><Link to="/singup">SING UP</Link></button>
         </div>
       </div>
       <div className="low-nav">
         <ul>
           <li>
-            <Link to="/">HOME</Link>
+            <Link to="/home">HOME</Link>
           </li>
           <li>
             <Link to="/starships">STARSHIPS</Link>
